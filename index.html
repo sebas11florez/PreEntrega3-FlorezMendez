@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,12 +25,12 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="./img/logo.png"
+            src="./img/logo.svg"
             alt="Logo"
             height="35"
             class="d-inline-block align-text-top"
           />
-          Tienda
+          MobileStore
         </a>
         <button
           class="navbar-toggler"
@@ -46,41 +46,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Inicio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/productos.html"
-                >Productos</a
-              >
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/servicios.html"
-                >Servicios</a
-              >
+              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/contacto.html"
-                >Contáctanos</a
-              >
+              <a class="nav-link" href="./pages/contacto.html">Contáctanos</a>
             </li>
           </ul>
           <button class="boton">Comprar</button>
         </div>
       </div>
     </nav>
-
     <section>
       <div class="top">
-        <img class="bigimg" src="./img/topimg.png" alt="smartphone" />
-
+        <section class="sliderfade"></section>
         <div>
           <h1>Tienda de Smartphones, los mejores precios del mercado</h1>
           <p>
@@ -151,7 +140,102 @@
         </li>
       </ol>
     </section>
+    <section class="sliderfade2"></section>
 
+    <section class="list-container-mobile">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Accordion Item #1
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is
+              shown by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Accordion Item #2
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Accordion Item #3
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="products">
       <h1>Productos</h1>
 
@@ -214,7 +298,7 @@
     <footer>
       <section class="footer-flex">
         <div class="footer-images">
-          <img class="logo" src="./img/logo2.png" alt="logo" />
+          <img class="logo" src="./img/logo2.svg" alt="logo" />
           <div class="social-logos">
             <img
               class="facebook"
